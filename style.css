@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+    width: 40%;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 200px auto;
+    position: relative;
+}
+
+.container img {
+    margin-top: 30px;
+ 
+}
+
+.container h2 {
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container p {
+    font-size: 15px;
+    margin-top: 20px;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating-box {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 40px auto;
+}
+
+.rate-btn {
+    font-size: 25px;
+    color: hsl(216, 50%, 92%);
+    padding: 20px;
+    border-radius: 50%;
+    border: hsl(216, 12%, 8%) solid 1px;
+    background-color: hsl(216, 12%, 8%);
+    cursor: pointer;
+    transition: 0.1s ease;
+    margin-top: 1px;
+}
+
+.active {
+    background-color: hsl(25, 97%, 53%);
+    border: hsl(25, 97%, 53%) solid 1px;
+    color: hsl(216, 7%, 14%);
+    transition: 0.01s ease;
+}
+
+.rate-btn:hover {
+    background-color: hsl(216, 7%, 14%);
+    border: hsl(216, 7%, 14%) solid 1px;
+}
+
+.submit-btn {
+    width: 50%;
+    padding: 20px;
+    text-align: center; 
+    margin: 20px 140px;  
+    border-radius: 20px;
+    border: hsl(25, 97%, 53%) solid 1px;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+
+.submit-btn:hover {
+    background-color: hsl(25, 73%, 58%) ;
+}
+
+.container .alert {
+    color: red;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+}
+
+.thanks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 200px auto;
+}
+
+.thanks-container img {
+    margin: 50px auto;
+}
+
+.thanks-container .rated {
+    color: hsl(25, 97%, 53%);
+    padding: 12px;
+    background-color: hsl(216, 12%, 8%);
+    border: (216, 12%, 8%) solid 1px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.thanks-container h2 {
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.thanks-container .para {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: hsl(217, 12%, 63%);
+    padding: 0 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .rating-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rate-btn {
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .submit-btn {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .thanks-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .container p {
+        font-size: 12px;
+    }
+
+    .rating-box {
+        width: 80%;
+    }
+
+    .rate-btn {
+        font-size: 14px;
+        padding: 8px;
+        margin: 6px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        margin: 12px auto;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .thanks-container {
+        width: 90%;
+    }
+
+    .thanks-container img {
+        width: 60px;
+    }
+
+    .thanks-container .rated {
+        font-size: 12px;
+        padding: 6px;
+        margin-bottom: 8px;
+    }
+
+    .thanks-container h2 {
+        font-size: 20px;
+    }
+
+    .thanks-container .para {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width: 980px) {
+    .rating-box {
+        width: 100%;
+    }
+
+    .rate-btn {
+        font-size: 15px;
+        padding: 18px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        margin: 12px auto;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1315px) {
+    .rating-box {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+        margin: 12px auto;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
